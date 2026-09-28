@@ -48,8 +48,7 @@
       <h1>Учебный интернет-магазин</h1>
       <p>
         Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
+        На её основе разработан многостраничный сайт интернет-магазина кабелей для мобильных устройств.
       </p>
       <a class="button" href="#popular">Перейти к товарам</a>
     </section>
@@ -68,10 +67,19 @@
     <section class="section" id="popular">
       <h2>Популярные товары</h2>
 
-      <div class="products-grid"></div>
+      <div class="products-grid">
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <img
+              class="product-card__image"
+              src="images/product-1.jpg"
+              alt="Товар 1"
+              width="300"
+              height="300"
+            >
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="product1.html">Товар 1</a>
+          </h3>
+          <p class="product-card__description">RIVACASE Кабель для мобильных устройств.</p>
           <p class="product-card__price">Цена: 1000 руб.</p>
           <button
             class="button product-card__button"
@@ -83,8 +91,17 @@
         </article>
 
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
+            <img
+              class="product-card__image"
+              src="images/product-2.jpg"
+              alt="Товар 1"
+              width="300"
+              height="300"
+            >
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="product2.html">Товар 2</a>
+          </h3>
+          <p class="product-card__description">RIVACASE Кабель для мобильных устройств.</p>
           <p class="product-card__price">Цена: 1500 руб.</p>
           <button
             class="button product-card__button"
@@ -96,8 +113,18 @@
         </article>
 
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <span class="product-card__badge">Новинка</span>
+            <img
+              class="product-card__image"
+              src="images/product-3.jpg"
+              alt="Товар 1"
+              width="300"
+              height="300"
+            >
+          <h3 class="product-card__title">
+            <a class="product-card__link" href="product3.html">Товар 3</a>
+          </h3>
+          <p class="product-card__description">RIVACASE Кабель для мобильных устройств.</p>
           <p class="product-card__price">Цена: 2000 руб.</p>
           <button
             class="button product-card__button"
@@ -112,17 +139,23 @@
 
     <aside class="aside-info">
       <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
-      </p>
+      <p>В этом проекте используются:</p>
+      <ul class="aside-info__list">
+        <li>HTML — семантическая разметка;</li>
+        <li>CSS — переменные, Flex, Grid, БЭМ;</li>
+        <li>JavaScript — модальное окно, валидация формы;</li>
+        <li>Git — контроль версий;</li>
+        <li>GitHub Pages — публикация сайта.</li>
+      </ul>
     </aside>
   </main>
+
+  <a class="to-top" href="#" aria-label="Наверх">↑</a>
 
   <footer class="site-footer" id="contacts">
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
     <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    <a class="button button--primary" href="order.html">Оформить заявку</a>
   </footer>
 
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
@@ -231,4 +264,5 @@
   <p class="success-message" id="success-message" hidden>
     Форма успешно отправлена!
   </p>
+  <a class="to-top" href="#" aria-label="Наверх">↑</a>
 </body>
